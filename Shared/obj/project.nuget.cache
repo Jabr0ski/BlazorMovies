@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cdy36JjrsVeTHFAn3AmR84It3pa0mZWxvoUqtG8RoZzSJ/isJtJAQ9MU3ahRMmF63FvclKau+DbkiVjJCMjj1g==",
+  "dgSpecHash": "X7UAEL15/YEQt7xtJO6920lQKhz2xqXsXOfiKPso6Myl68IKtpC+pe9OWeDgqkP2rspZTPJm5p29UK6pty0jKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shayr\\GitHubRepos\\BlazorMovies\\BlazorMovies\\Shared\\BlazorMovies.Shared.csproj",
+  "projectFilePath": "C:\\Users\\shayr\\GitHubRepos\\BlazorMovies\\Shared\\BlazorMovies.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

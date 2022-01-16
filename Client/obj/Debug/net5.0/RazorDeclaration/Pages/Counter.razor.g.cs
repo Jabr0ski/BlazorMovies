@@ -13,71 +13,85 @@ namespace BlazorMovies.Client.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 1 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 2 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 3 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 4 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 5 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 6 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 7 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 8 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 9 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using BlazorMovies.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+#line 10 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
 using BlazorMovies.Client.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
+using BlazorMovies.Client.Helpers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\_Imports.razor"
+using BlazorMovies.Shared.Entities;
 
 #line default
 #line hidden
@@ -91,7 +105,7 @@ using BlazorMovies.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\Pages\Counter.razor"
+#line 9 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Pages\Counter.razor"
        
     private int currentCount = 0;
 

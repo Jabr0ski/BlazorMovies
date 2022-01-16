@@ -10,4 +10,4 @@ build_property.EnableSingleFileAnalyzer =
 build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorMovies.Client
-build_property.ProjectDir = C:\Users\shayr\GitHubRepos\BlazorMovies\BlazorMovies\Client\
+build_property.ProjectDir = C:\Users\shayr\GitHubRepos\BlazorMovies\Client\
