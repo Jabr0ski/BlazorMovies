@@ -1,54 +1,35 @@
 ﻿@page "/"
+@*<p>Hello, @StringUtilities.CustomToUpper(name)</p>
 
-<p>Hello, @StringUtilities.CustomToUpper(name)</p>
+    <p>Let's add 2 + 2 = @(2+2)</p>
 
-<p>Let's add 2 + 2 = @(2+2)</p>
-
-<button @onclick="@WriteInLog">Click me</button>
+    <button @onclick="@WriteInLog">Click me</button>*@
 
 <div>
     <h3>Movie</h3>
-    @if (movies == null)
-    {
-        <text>Loading...</text>
-    }
-    else
-    {
-        @foreach (var movie in movies)
-        {
-            <p>Title: @((MarkupString)movie.Title)</p>
-            <p>Release Date: <b>@movie.ReleaseDate.ToString("dd MMM yyyy")</b><br /><br /></p>
-        }
+    <MoviesList Movies="movies" />
+</div>
 
-        @for (var i = 0; i < movies.Count; i++)
-        {
-            <div style="background-color: @(i % 2 == 0 ? "blue" : "red")">
-                <p>@(i+1)) Title: <b>@movies[i].Title</b></p>
-                <p>Release Date: <b>@movies[i].ReleaseDate.ToString("dd MMM yyyy")</b><br /><br /></p>
-            </div>
-        }
-    }
+<div>
+    <h2>Create a movie</h2>
 
+    <DummyTextbox @attributes="dummyTextboxParameters" />
 </div>
 
 @code{
-    string name = "Julia";
-
-    List<Movie> movies;
-
-    protected async override Task OnInitializedAsync()
+    private List<Movie> movies;
+    private Dictionary<string, object> dummyTextboxParameters = new Dictionary<string, object>() {
+                                        { "placeholder", "movie name"} ,
+                                        { "disabled", "true" }
+                                    };
+    protected override void OnInitialized()
     {
-        await Task.Delay(3000);
+
         movies = new List<Movie>()
-        {
-            new Movie(){Title = "<b>Spider-Man: Far from Home</b>", ReleaseDate = new DateTime(2019, 7, 2)},
-            new Movie(){Title = "<i>Moana</i>", ReleaseDate = new DateTime(2016, 11, 23)},
-            new Movie(){Title = "Inception", ReleaseDate = new DateTime(2010, 7, 16)}
-        };
-    }
-
-    void WriteInLog()
     {
-        Console.WriteLine("I've been clicked! (from method)");
+            new Movie(){Title = "<b>Spider-Man: Far from Home</b>", ReleaseDate = new DateTime(2019, 7, 2), KeyID = 0},
+            new Movie(){Title = "<i>Moana</i>", ReleaseDate = new DateTime(2016, 11, 23), KeyID = 1},
+            new Movie(){Title = "Inception", ReleaseDate = new DateTime(2010, 7, 16), KeyID = 2}
+        };
     }
 }

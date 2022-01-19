@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorMovies.Server", "Server\BlazorMovies.Server.csproj", "{AA52D4F0-3580-42D8-8243-DC3744D65202}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMovies.Server", "Server\BlazorMovies.Server.csproj", "{AA52D4F0-3580-42D8-8243-DC3744D65202}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorMovies.Client", "Client\BlazorMovies.Client.csproj", "{758AF83D-9BCE-4793-8FE0-ACE9D5FC6E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMovies.Client", "Client\BlazorMovies.Client.csproj", "{758AF83D-9BCE-4793-8FE0-ACE9D5FC6E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorMovies.Shared", "Shared\BlazorMovies.Shared.csproj", "{F0DF1EA7-28E4-498A-876A-02FD44D65DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMovies.Shared", "Shared\BlazorMovies.Shared.csproj", "{F0DF1EA7-28E4-498A-876A-02FD44D65DAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1270,3 +1270,9 @@ C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\BlazorMovies.Cli
 C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\BlazorMovies.Client.dll
 C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\ref\BlazorMovies.Client.dll
 C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\BlazorMovies.Client.pdb
+C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\RazorDeclaration\Shared\MoviesList.razor.g.cs
+C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\Razor\Shared\MoviesList.razor.g.cs
+C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\RazorDeclaration\Shared\IndividualMovie.razor.g.cs
+C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\Razor\Shared\IndividualMovie.razor.g.cs
+C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\RazorDeclaration\Shared\DummyTextbox.razor.g.cs
+C:\Users\shayr\GitHubRepos\BlazorMovies\Client\obj\Debug\net5.0\Razor\Shared\DummyTextbox.razor.g.cs

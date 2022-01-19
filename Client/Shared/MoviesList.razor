@@ -1,0 +1,24 @@
+﻿@if (Movies == null)
+{
+    <img src ="https://c.tenor.com/tEBoZu1ISJ8AAAAC/spinning-loading.gif" />
+
+}
+else if (Movies.Count == 0)
+{
+    <text>There are no records to show</text>
+}
+else
+{
+
+    <input type="checkbox" @onchange="@(() => displayButtons = !displayButtons)" />
+    @foreach (var movie in Movies)
+    {
+        <IndividualMovie Movie="movie" DisplayButtons="displayButtons"/>
+    }
+}
+
+@code {
+    [Parameter] public List<Movie> Movies { get; set; }
+    bool displayButtons = false;
+
+}

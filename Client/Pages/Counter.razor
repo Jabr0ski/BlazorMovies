@@ -6,7 +6,21 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<MoviesList Movies="movies"/>
+
 @code {
+
+    private List<Movie> movies;
+    protected override void OnInitialized()
+    {
+
+        movies = new List<Movie>()
+    {
+            new Movie(){Title = "<b>Joker</b>", ReleaseDate = new DateTime(2019, 7, 2), KeyID = 0},
+            new Movie(){Title = "<i>Avengers</i>", ReleaseDate = new DateTime(2016, 11, 23), KeyID = 1},
+        };
+    }
+
     private int currentCount = 0;
 
     private void IncrementCount()

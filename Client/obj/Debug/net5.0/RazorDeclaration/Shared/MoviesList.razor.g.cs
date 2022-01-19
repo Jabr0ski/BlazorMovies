@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorMovies.Client.Pages
+namespace BlazorMovies.Client.Shared
 {
     #line hidden
     using System;
@@ -96,8 +96,7 @@ using BlazorMovies.Shared.Entities;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class MoviesList : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,26 +104,11 @@ using BlazorMovies.Shared.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 11 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Pages\Counter.razor"
+#line 20 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Shared\MoviesList.razor"
        
+    [Parameter] public List<Movie> Movies { get; set; }
+    bool displayButtons = false;
 
-    private List<Movie> movies;
-    protected override void OnInitialized()
-    {
-
-        movies = new List<Movie>()
-    {
-            new Movie(){Title = "<b>Joker</b>", ReleaseDate = new DateTime(2019, 7, 2), KeyID = 0},
-            new Movie(){Title = "<i>Avengers</i>", ReleaseDate = new DateTime(2016, 11, 23), KeyID = 1},
-        };
-    }
-
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
 
 #line default
 #line hidden
