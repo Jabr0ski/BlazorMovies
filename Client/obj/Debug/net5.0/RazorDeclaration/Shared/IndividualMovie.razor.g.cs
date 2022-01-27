@@ -108,11 +108,8 @@ using BlazorMovies.Shared.Entities;
        
     [Parameter] public Movie Movie { get; set; }
     [Parameter] public bool DisplayButtons { get; set; } = false;
+    [Parameter] public EventCallback<Movie> DeleteMovie { get; set; }
 
-    void Delete()
-    {
-        Console.WriteLine($"Deleting {Movie.Title}");
-    }
 
 #line default
 #line hidden

@@ -7,7 +7,15 @@
 
 <div>
     <h3>Movie</h3>
-    <MoviesList Movies="movies" />
+    <MoviesList Movies="movies">
+        <NullTemplate>
+            <span style="color: red">This is loading...</span>
+        </NullTemplate>
+        <EmptyTemplate>
+            <span style="color: blue">No records to see...</span>
+        </EmptyTemplate>
+    </MoviesList>
+
 </div>
 
 <div>
@@ -17,7 +25,7 @@
 </div>
 
 @code{
-    private List<Movie> movies;
+    private List<Movie> movies = new List<Movie>();
     private Dictionary<string, object> dummyTextboxParameters = new Dictionary<string, object>() {
                                         { "placeholder", "movie name"} ,
                                         { "disabled", "true" }
@@ -26,7 +34,7 @@
     {
 
         movies = new List<Movie>()
-    {
+{
             new Movie(){Title = "<b>Spider-Man: Far from Home</b>", ReleaseDate = new DateTime(2019, 7, 2), KeyID = 0},
             new Movie(){Title = "<i>Moana</i>", ReleaseDate = new DateTime(2016, 11, 23), KeyID = 1},
             new Movie(){Title = "Inception", ReleaseDate = new DateTime(2010, 7, 16), KeyID = 2}

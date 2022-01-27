@@ -1,24 +1,46 @@
 ﻿@if (Movies == null)
 {
-    <img src ="https://c.tenor.com/tEBoZu1ISJ8AAAAC/spinning-loading.gif" />
-
+    @if (NullTemplate != null)
+    {
+        @NullTemplate
+    }
+    else
+    {
+        //if NullTemplate == null
+        <img src="https://c.tenor.com/tEBoZu1ISJ8AAAAC/spinning-loading.gif" />
+    }
 }
 else if (Movies.Count == 0)
 {
-    <text>There are no records to show</text>
+    @if (EmptyTemplate != null)
+    {
+        @EmptyTemplate
+    }
+    else
+    {
+        //if Default Content
+        <text>There are no records to show</text>
+    }
 }
 else
 {
+    <input type="checkbox" bind="@displayButtons" />
 
-    <input type="checkbox" @onchange="@(() => displayButtons = !displayButtons)" />
     @foreach (var movie in Movies)
     {
-        <IndividualMovie Movie="movie" DisplayButtons="displayButtons"/>
+        <IndividualMovie Movie="movie" DisplayButtons="displayButtons"
+                         DeleteMovie="DeleteMovie" />
     }
 }
 
 @code {
     [Parameter] public List<Movie> Movies { get; set; }
-    bool displayButtons = false;
+    [Parameter] public RenderFragment NullTemplate { get; set; }
+    [Parameter] public RenderFragment EmptyTemplate { get; set; }
+    bool displayButtons = true;
 
+    private void DeleteMovie(Movie movie)
+    {
+        Movies.Remove(movie);
+    }
 }

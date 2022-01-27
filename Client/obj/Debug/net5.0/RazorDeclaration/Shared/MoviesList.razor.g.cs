@@ -104,11 +104,17 @@ using BlazorMovies.Shared.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 20 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Shared\MoviesList.razor"
+#line 36 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Shared\MoviesList.razor"
        
     [Parameter] public List<Movie> Movies { get; set; }
-    bool displayButtons = false;
+    [Parameter] public RenderFragment NullTemplate { get; set; }
+    [Parameter] public RenderFragment EmptyTemplate { get; set; }
+    bool displayButtons = true;
 
+    private void DeleteMovie(Movie movie)
+    {
+        Movies.Remove(movie);
+    }
 
 #line default
 #line hidden

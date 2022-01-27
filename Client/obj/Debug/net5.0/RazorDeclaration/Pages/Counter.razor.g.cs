@@ -105,7 +105,7 @@ using BlazorMovies.Shared.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 11 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Pages\Counter.razor"
+#line 13 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Pages\Counter.razor"
        
 
     private List<Movie> movies;

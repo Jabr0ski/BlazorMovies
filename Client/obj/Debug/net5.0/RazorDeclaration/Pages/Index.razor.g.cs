@@ -105,9 +105,9 @@ using BlazorMovies.Shared.Entities;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Pages\Index.razor"
+#line 27 "C:\Users\shayr\GitHubRepos\BlazorMovies\Client\Pages\Index.razor"
       
-    private List<Movie> movies;
+    private List<Movie> movies = new List<Movie>();
     private Dictionary<string, object> dummyTextboxParameters = new Dictionary<string, object>() {
                                         { "placeholder", "movie name"} ,
                                         { "disabled", "true" }
@@ -116,7 +116,7 @@ using BlazorMovies.Shared.Entities;
     {
 
         movies = new List<Movie>()
-    {
+{
             new Movie(){Title = "<b>Spider-Man: Far from Home</b>", ReleaseDate = new DateTime(2019, 7, 2), KeyID = 0},
             new Movie(){Title = "<i>Moana</i>", ReleaseDate = new DateTime(2016, 11, 23), KeyID = 1},
             new Movie(){Title = "Inception", ReleaseDate = new DateTime(2010, 7, 16), KeyID = 2}
